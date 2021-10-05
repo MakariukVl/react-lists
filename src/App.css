@@ -17,18 +17,21 @@ h3 {
   color: green;
 }
 
+.listItem {
+  cursor: pointer;
+}
+
 #addDog {
   text-align: left;
   color: green;
   margin-top: 15px;
 }
 
-<!--
 ul {
-  list-style-type: none;
-  text-align: center;
+  list-style-type: disc;
+  text-align: left;
+  line-height: 2em;
 }
--->
 
 
 dl {

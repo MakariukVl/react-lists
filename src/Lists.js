@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import List from './List.js';
-const uuidv4 = require('uuid');
+const uuid = require('uuid');
 
 class Lists extends Component {
 
@@ -19,10 +19,10 @@ class Lists extends Component {
     var lists = this.props.lists;
     var addItem = this.props.addItem;
     return (
-      <div key={uuidv4()}>
+      <div key={uuid.v4()}>
       {lists.map(function(listName) {
         return (
-          <List name={listName} items={items[listName]} addItem={addItem.bind(this)} key={uuidv4()} />
+          <List name={listName} items={items[listName]} addItem={addItem.bind(this)} key={uuid.v4()} />
         )
       })}
       </div>
